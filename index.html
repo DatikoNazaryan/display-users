@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users Directory</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+ <div class="wrapper">
+  <div class="container">
+     <header class="header">
+          <h1>Users Directory</h1>
+    </header>
+    <main class="main">
+      <div class="controls">
+        <select id="userCount">
+          <option value="all" selected>All</option>
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+        <p>User</p>
+        <button id="loadBtn">Show Users</button>
+      </div>
+      <div id="spinner" class="spinner-wrapper" style="display: none;">
+        <div class="spinner"></div>
+      </div>
+      <div id="status" class="status"></div>
+      <div id="users" class="content"></div>
+    </main>
+  </div>
+ </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
